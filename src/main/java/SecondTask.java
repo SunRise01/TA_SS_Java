@@ -1,14 +1,13 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 
 public class SecondTask {
     public void findTheBiggestOddAndEven(){
         int n=0;
-        //reading the start and end of interval from console
+        //reading the length of fibonacci set
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         try {
             System.out.println("enter the size of Fibonacci set");
@@ -45,7 +44,6 @@ public class SecondTask {
 
         //finding the precentage
         int countEvens=0;
-        double precentageOfEvens;
         for (int i = 0; i != fList.size() ; i++) {
             if (fList.get(i) % 2 == 0)countEvens++;
         }
